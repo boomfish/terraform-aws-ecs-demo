@@ -9,7 +9,8 @@ This project manages the following resources:
 - A Route53 zone for the domain
 - A VPC with public and private subnets and a single NAT gateway
 - A VPC flow log to an S3 bucket (optional)
-- SSM Parameter Store parameters to identify resources to sub-projects
+- Standard VPC security groups for use in child projects
+- SSM Parameter Store parameters to identify resources to child projects
 
 ## Variables
 
@@ -38,3 +39,17 @@ Output values are declared in `outputs.tf`.
 | Output name                 | Description                                                    |
 | --------------------------- | -------------------------------------------------------------- |
 | route53_domain_name_servers | List of name servers to use for the domain's parent NS record  |
+
+## First Deployment
+
+Apply the project:
+
+```bash
+make apply
+```
+
+Note the `route53_domain_name_servers` in the output.
+
+If this is a registered domain, go to your DNS registrar's management interface and set the name servers for the domain.
+
+If this is a subdomain, go to the DNS record management interface for the parent domain and create a `NS` record for the subdomain with the name servers as individual values.

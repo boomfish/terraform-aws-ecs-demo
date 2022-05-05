@@ -28,17 +28,3 @@ Here are some key variables. Variables with no default value must be defined in 
 | ec2_worker_instance_type  | Worker instance type                        | "t3a.small"            |
 | ec2_worker_instance_count | Number of worker instances                  | 1                      |
 | ecs_bottlerocket_version  | Bottlerocket OS version for workers         | "1.7.2"                |
-
-## First Deployment
-
-Apply the project:
-
-```bash
-make apply
-```
-
-Note the `route53_domain_name_servers` in the output.
-
-If this is a registered domain, go to your DNS registrar's management interface and set the name servers for the daomin.
-
-If this is a subdomain, go to the DNS record management interface for the parent domain and create a `NS` record for the subdomain with the name servers as individual values.
