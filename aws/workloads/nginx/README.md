@@ -18,6 +18,8 @@ Variables are defined in `variables.tf`.
 
 Here are some key variables. Variables with no default value must be defined in the workspace.
 
+| Variable name                   | Description                                    | Default value    |
+| ------------------------------- | ---------------------------------------------- | ---------------- |
 | aws_resource_prefix             | Prefix for AWS resource names                  | "ecsdemo-"       |
 | aws_region_prefix               | Extra prefix for cross-region AWS resources    | ""               |
 | aws_ssm_parameter_prefix        | Value of BillingCode tag for resources         | "/ecsdemo"       |
