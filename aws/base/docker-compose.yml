@@ -1,0 +1,18 @@
+version: '2'
+services:
+
+  terraform:
+    image: hashicorp/terraform:1.1.9
+    volumes:
+      - .:/work/aws/base
+      - ../../includes:/work/includes
+      - ~/.aws/:/root/.aws
+      - ./.terraform.d:/root/.terraform.d
+    working_dir: /work/aws/base
+    environment:
+      - AWS_ACCESS_KEY_ID
+      - AWS_SECRET_ACCESS_KEY
+      - AWS_PROFILE
+      - AWS_DEFAULT_REGION
+      - AWS_SESSION_TOKEN
+      - AWS_CONFIG_FILE

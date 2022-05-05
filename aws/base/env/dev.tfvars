@@ -1,0 +1,5 @@
+aws_resource_prefix      = "ecsdemo-dev-"
+aws_ssm_parameter_prefix = "/ecsdemo/dev"
+aws_resource_tag_value   = "ecsdemo-dev"
+route53_domain_name      = "ecsdemo.boomfish.dev"
+vpc_net_address          = "10.51.32.0"
