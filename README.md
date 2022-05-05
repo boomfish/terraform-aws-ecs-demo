@@ -6,6 +6,7 @@ This repository contains Terraform projects to manage AWS resources for an ECS e
 
 - Uses Terraform 1.0 syntax
 - Supports deployment to multiple environments
+- Supports running workloads in different regions
 - Terraform runtime isolation: upgrading Terraform version won't impact other projects
 - Can be deployed from native Windows (WSL not required)
 

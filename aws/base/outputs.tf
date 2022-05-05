@@ -18,3 +18,7 @@ output "aws_account_id" {
 output "route53_domain_name_servers" {
   value = aws_route53_zone.domain.name_servers
 }
+
+output "route53_domain_zone_id" {
+  value = aws_route53_zone.domain.zone_id
+}
