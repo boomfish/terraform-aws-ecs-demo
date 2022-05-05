@@ -75,8 +75,8 @@ There are a number of project folders in this repository that need to be deploye
 
 The following environment definitions have been provided:
 
-- `dev`: Low-capacity workload in the default region
-- `prod`: Production-capacity workload in the default region
+- `dev`: Low-capacity workload in the `ap-southeast-2` (Sydney) region
+- `prod`: Production-capacity workload in the `ap-southeast-2` (Sydney) region
 - `prod2`: Production-capacity workload in the `us-west-2` (Oregon) region
 
 To deploy an environment definition, setup a workspace with the same name in each project and deploy them in sequence. For example, to deploy a dev environment:
