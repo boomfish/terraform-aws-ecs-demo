@@ -1,11 +1,11 @@
-# Terraform ECS Demonstration 
+# Terraform AWS ECS Demonstration 
 
-This repository contains Terraform projects to manage AWS resources for an ECS environment with an NGINX workload.
+This repository contains Terraform projects to manage AWS resources for an ECS environment with a sample NGINX website workload.
 
 ## Features
 
-- Uses Terraform 1.0 syntax and follows recommended practices
-- Supports deployment to multiple AWS environments
+- Uses Terraform 1.0 syntax
+- Supports deployment to multiple environments
 - Terraform runtime isolation: upgrading Terraform version won't impact other projects
 - Can be deployed from native Windows (WSL not required)
 
@@ -48,7 +48,7 @@ This repository includes support for the [asdf](http://asdf-vm.com/) tool versio
 In addition to asdf this option requires installation of the following plugins:
 
 - [asdf-hashicorp](https://github.com/asdf-community/asdf-hashicorp) (install for terraform)
-- [asdf-direnv])(https://github.com/asdf-community/asdf-direnv)
+- [asdf-direnv](https://github.com/asdf-community/asdf-direnv)
 
 To use this option for a Terraform project in this respository, create a `.envrc` file in the project folder with the following contents:
 
@@ -147,4 +147,4 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Dennis Clark - [@boomerangfish](https://twitter.com/boomerangfish) - boomfish@gmail.com
 
-Project Link: [https://github.com/boomfish/terraform-ecs-demo](https://github.com/boomfish/terraform-ecs-demo)
+Project Link: [https://github.com/boomfish/terraform-aws-ecs-demo](https://github.com/boomfish/terraform-aws-ecs-demo)
